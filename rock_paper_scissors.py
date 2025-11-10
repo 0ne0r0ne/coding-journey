@@ -1,6 +1,6 @@
 import random
 options = ["Rock", "Paper", "Scissors"]
-user_options = input("Rock, Paper or Scissors\n")
+user_options = input("Rock, Paper or Scissors\n").capitalize()
 computer_options = random.choice(options)
 
 if user_options == computer_options:
