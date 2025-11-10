@@ -16,9 +16,9 @@ elif user_options == "Paper" and computer_options == "Scissors":
 elif user_options == "Scissors" and computer_options == "Rock":
     print("You lost!")
 elif user_options == "Scissors" and computer_options == "Paper":
-    print("You won")
+    print("You won!")
 
-print(f"Your choice is {user_options} and computer chocice is {computer_options}")
+print(f"Your choice is {user_options} and computer choice is {computer_options}")
 
 
 
