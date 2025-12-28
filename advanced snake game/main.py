@@ -17,6 +17,9 @@ snake = Snake()
 food = Food()
 scoreboard = ScoreBoard()
 
+with open("data.txt", mode="r") as memory_1:
+    scoreboard.high_score = int(memory_1.readline())
+
 
 
 screen.listen()
@@ -27,6 +30,10 @@ screen.onkey(snake.right, "Right")
 
 game_is_on = True
 while game_is_on:
+
+    with open("data.txt", mode="w") as file:
+        file.write(str(scoreboard.high_score))
+
     screen.update()
     time.sleep(0.1)
 
