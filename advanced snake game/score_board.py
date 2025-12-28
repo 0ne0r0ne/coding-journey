@@ -2,6 +2,7 @@ from turtle import Turtle
 
 with open("data.txt", "r") as f:
     data = int(f.readlines()[0])
+    
 class ScoreBoard(Turtle):
 
     def __init__(self):
