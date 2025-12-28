@@ -1,11 +1,13 @@
 from turtle import Turtle
 
+with open("data.txt", "r") as f:
+    data = int(f.readlines()[0])
 class ScoreBoard(Turtle):
 
     def __init__(self):
         super().__init__()
         self.score = 0
-        self.high_score = 0
+        self.high_score = data
         self.color("white")
         self.penup()
         self.goto(0,270)
@@ -30,9 +32,6 @@ class ScoreBoard(Turtle):
 
 
 
-    # def game_over(self):
-    #     self.goto(0,0)
-    #     self.color("red")
-    #     self.write("GAME OVER!", align="center", font=("Courier", 50, "normal"))
+    
 
 
