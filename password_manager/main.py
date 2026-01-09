@@ -60,7 +60,6 @@ def find_password():
     website = website_entry.get() 
 
     try:
-        # 2. Adım: Dosyayı okumaya çalış
         with open("data.json", "r") as data_file:
             data = json.load(data_file)
 
